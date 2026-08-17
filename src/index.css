@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #070709;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* Custom range slider */
+.chimera-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  cursor: pointer;
+  outline: none;
+}
+.chimera-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #f6ffcf;
+  border: 2px solid #070709;
+  box-shadow: 0 0 0 1px rgba(217, 242, 78, 0.7), 0 0 12px rgba(217, 242, 78, 0.5);
+  transition: transform 0.1s ease;
+}
+.chimera-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+.chimera-range::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #f6ffcf;
+  border: 2px solid #070709;
+  box-shadow: 0 0 0 1px rgba(217, 242, 78, 0.7), 0 0 12px rgba(217, 242, 78, 0.5);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(217, 242, 78, 0.4);
+}
